@@ -1,78 +1,58 @@
-#
-# This file contains configuration flags to customize your site
-#
+# Site settings
+title:       José Tavares blog
+email:       josetavares00@gmail.com
+author:      José Tavares
+description: "Web Developer | Guitar Player"
+baseurl:     ""
+url:         "http://yconoclast.github.io"
 
-# Name of your site (displayed in the header)
-name: José Tavares blog
-
-# Short bio or description (displayed in the header)
-description: Web Developer | Guitar Player
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://pbs.twimg.com/profile_images/528283879623254016/Et0eLTYo_400x400.jpeg
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: josetavares00@gmail.com
-  facebook: yconoclast
-  flickr:
-  github: yconoclast
-  instagram:
-  linkedin: josetavares17
-  pinterest:
-  rss: true
-  twitter: yconoclast
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+# Google analytics
 google_analytics: UA-56447609-2
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: http://yconoclast.github.io
+# Optional features
+animated:           true
+show_related_posts: false
+show_post_footers:  true
+show_social_icons:  true
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname:
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+# Social icons
+github_username: yconoclast
+stackoverflow_id:
+twitter_username: yconoclast
+google_plus_id:
+linkedin_username:
+angellist_username:
+bitcoin_url:
+paypal_url:
+flattr_button:
+facebook: yconoclast
+soundcloud: yconoclast
 
-markdown: redcarpet
-highlighter: pygments
-permalink: /:title/
+# Post sharing icons
+show_sharing_icons: false
+share_text: 'Share this post!'
+# Change to 'true' to enable individual icons
+share_facebook: false
+share_twitter: false
+share_googleplus: false
+share_linkedin: false
+share_digg: false
+share_tumblr: false
+share_reddit: false
+share_stumbleupon: false
+share_hackernews: false
 
-# The release of Jekyll Now that you're using
-version: v1.1.0
-
-# Set the Sass partials directory, as we're using @imports
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+paginate:     4
 sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
+  compressed: true
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-
-# Exclude these files from your production _site
-exclude:
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
-    - CNAME
-    - SINTAX
+  - jekyll-sitemap
