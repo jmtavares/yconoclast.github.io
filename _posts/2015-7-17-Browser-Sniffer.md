@@ -12,7 +12,7 @@ For more Information
 <a class="fa fa-github" target="_blank" href="https://github.com/yconoclast/browsersniffer">Browser Sniffer Github</a>.
 
 
-Include the minified version (dist/browsersniffer.min.js) in your page and call this method:
+Include the minified version (browsersniffer.min.js) in your page and call this method:
 
 {% highlight js %}
 window.browsersniffer.detect();
