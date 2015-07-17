@@ -11,6 +11,9 @@ You can check in the Bowser Repository the full list of devices supported <a hre
 For more Information
 <a class="fa fa-github" target="_blank" href="https://github.com/yconoclast/browsersniffer">Browser Sniffer Github</a>.
 
+{% highlight js %}
+npm install browsersniffer --save-dev
+{% endhighlight %}
 
 Include the minified version (browsersniffer.min.js) in your page and call this method:
 
