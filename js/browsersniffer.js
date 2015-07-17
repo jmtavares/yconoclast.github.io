@@ -48,16 +48,23 @@
     function getNavigatorProperties(browserData) {
         if (window.navigator) {
             browserData.language = window.navigator.language;
-            browserData.maxTouchPoints = window.navigator.maxTouchPoints;
             browserData.javaEnabled = window.navigator.javaEnabled();
             browserData.onLine = window.navigator.onLine;
         }
     }
     function getScreenProperties(browserData) {
+        var screen = {};
         if (window.screen) {
-            browserData.currentResolution = window.screen.width + "x" + window.screen.height;
-            browserData.colorDepth = window.screen.colorDepth;
+            screen.currentResolution = window.screen.width + "x" + window.screen.height;
+            screen.colorDepth = window.screen.colorDepth;
+            if (window.hasOwnProperty("orientation")) {
+                screen.orientation = window.Math.abs(window.orientation) - 90 === 0 ? "landscape" : "portrait";
+            }
         }
+        if (window.navigator) {
+            screen.maxTouchPoints = window.navigator.maxTouchPoints;
+        }
+        browserData.screen = screen;
     }
     function getPerformanceProperties(browserData) {
         var navigationStart;
@@ -99,7 +106,7 @@
             browser: browserDescription,
             version: bowserInstance.version,
             mobileOS: operatingSystemDescription,
-            mobileOSVersion: bowserInstance.osversion,
+            mobileOSVersion: bowserInstance.osversion || "",
             bowser: bowserInstance
         };
         getNavigatorProperties(browserData);

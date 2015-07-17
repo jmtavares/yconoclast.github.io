@@ -26,9 +26,9 @@ And it will return an object like this:
 {% highlight js %}
 {
   "browser": "Chrome",
+  "version": "42.0",
   "mobileOS": "Android",
   "mobileOSVersion": "4.4.4",
-  "version": "42.0",
   "bowser": {
     "name": "Chrome",
     "chrome": true,
@@ -40,32 +40,36 @@ And it will return an object like this:
     "a": true
   },
   "language": "en-US",
-  "maxTouchPoints": 1,
   "javaEnabled": true,
   "onLine": true,
-  "currentResolution": "384x640",
-  "colorDepth": 24,
+  "screen": {
+    "currentResolution": "384x640",
+    "colorDepth": 24,
+    "maxTouchPoints": 1,
+    "orientation": "landscape"
+  },
   "timing": {
-    "unloadEventStart": 213,
-    "unloadEventEnd": 213,
+    "unloadEventStart": 4,
+    "unloadEventEnd": 4,
     "redirectStart": 0,
     "redirectEnd": 0,
     "fetchStart": 0,
-    "domainLookupStart": 0,
-    "domainLookupEnd": 0,
-    "connectStart": 0,
-    "connectEnd": 0,
+    "domainLookupStart": 1,
+    "domainLookupEnd": 1,
+    "connectStart": 1,
+    "connectEnd": 1,
     "secureConnectionStart": 0,
-    "requestStart": 209,
-    "responseStart": 212,
-    "responseEnd": 213,
-    "domLoading": 217,
+    "requestStart": 1,
+    "responseStart": 3,
+    "responseEnd": 4,
+    "domLoading": 9,
     "domInteractive": 688,
     "domContentLoadedEventStart": 688,
-    "domContentLoadedEventEnd": 704,
-    "domComplete": 1907,
-    "loadEventStart": 1908,
-    "loadEventEnd": 1908
+    "domContentLoadedEventEnd": 705,
+    "domComplete": 1239,
+    "loadEventStart": 1239,
+    "loadEventEnd": 1239
   }
+}
 {% endhighlight %}
 
