@@ -1,9 +1,10 @@
 /*
-* BrowserSniffer (0.1.0)
-* https://github.com/yconoclast/browsersniffer
-* MIT License | Copyright (c) 2015 José Tavares
-*/
+ * browsersniffer (0.4.0)
+ * https://github.com/yconoclast/browsersniffer
+ * MIT License | Copyright (c) 2015 José Tavares
+ */
 /* global bowser */
+/* global window */
 (function(name, global, factory) {
     "use strict";
     global[name] = factory();
@@ -15,7 +16,6 @@
             firefox: "Firefox",
             msie: "Internet Explorer",
             msedge: "Internet Explorer Edge",
-            android: "Android Native",
             ios: "iOS Native",
             opera: "Opera",
             phantom: "PhantomJS",
@@ -34,9 +34,9 @@
         return {
             android: "Android",
             windowsphone: "Windows Phone",
-            iphone: "iOS Iphone",
-            ipad: "iOS Ipad",
-            ipod: "iOS Ipod",
+            iphone: "iPhone",
+            ipad: "iPad",
+            ipod: "iPod",
             blackberry: "Blackberry",
             firefoxos: "Firefox OS",
             webos: "WebOS",
@@ -45,11 +45,42 @@
             sailfish: "Sailfish"
         };
     }
+    function getNavigatorProperties(browserData) {
+        if (window.navigator) {
+            browserData.language = window.navigator.language;
+            browserData.maxTouchPoints = window.navigator.maxTouchPoints;
+            browserData.javaEnabled = window.navigator.javaEnabled();
+            browserData.onLine = window.navigator.onLine;
+        }
+    }
+    function getScreenProperties(browserData) {
+        if (window.screen) {
+            browserData.currentResolution = window.screen.width + "x" + window.screen.height;
+            browserData.colorDepth = window.screen.colorDepth;
+        }
+    }
+    function getPerformanceProperties(browserData) {
+        var navigationStart;
+        var timing = {};
+        if (window.performance && window.performance.timing) {
+            navigationStart = window.performance.timing.navigationStart;
+            for (var i in window.performance.timing) {
+                if (i !== "navigationStart") {
+                    if (window.performance.timing[i] < navigationStart) {
+                        timing[i] = window.performance.timing[i];
+                    } else {
+                        timing[i] = window.performance.timing[i] - navigationStart;
+                    }
+                }
+            }
+        }
+        browserData.timing = timing;
+    }
     function detect() {
         var browserDescription = "Unknown Browser";
         var operatingSystemDescription = "Unknown Operating System";
         var bowserInstance;
-        var browserData = {};
+        var browserData;
         var browserFlags = getBrowserFlags();
         var mobileOperatingSystem = getMobileOSFlags();
         var flag;
@@ -64,10 +95,16 @@
                 operatingSystemDescription = mobileOperatingSystem[flag];
             }
         }
-        browserData.browser = browserDescription;
-        browserData.mobileOperatingSystem = operatingSystemDescription;
-        browserData.version = bowserInstance.version;
-        browserData.bowser = bowserInstance;
+        browserData = {
+            browser: browserDescription,
+            version: bowserInstance.version,
+            mobileOS: operatingSystemDescription,
+            mobileOSVersion: bowserInstance.osversion,
+            bowser: bowserInstance
+        };
+        getNavigatorProperties(browserData);
+        getScreenProperties(browserData);
+        getPerformanceProperties(browserData);
         return browserData;
     }
     return {
@@ -76,16 +113,16 @@
 });
 
 /*!
-  * Bowser - a browser detector
-  * https://github.com/ded/bowser
-  * MIT License | (c) Dustin Diaz 2014
-  */
+ * Bowser - a browser detector
+ * https://github.com/ded/bowser
+ * MIT License | (c) Dustin Diaz 2014
+ */
 !function(name, definition) {
     if (typeof module != "undefined" && module.exports) module.exports["browser"] = definition(); else if (typeof define == "function" && define.amd) define(definition); else this[name] = definition();
 }("bowser", function() {
     /**
-    * See useragents.js for examples of navigator.userAgent
-    */
+     * See useragents.js for examples of navigator.userAgent
+     */
     var t = true;
     function detect(ua) {
         function getFirstMatch(regex) {
@@ -285,10 +322,10 @@
         return false;
     };
     /*
-   * Set our detect method to the main bowser object so we can
-   * reuse it to test other user agents.
-   * This is needed to implement future tests.
-   */
+     * Set our detect method to the main bowser object so we can
+     * reuse it to test other user agents.
+     * This is needed to implement future tests.
+     */
     bowser._detect = detect;
     return bowser;
 });
