@@ -1,4 +1,21 @@
 {% if site.browsersniffer_enabled %}
-    <script async type="text/javascript" src='{{ "/js/browsersniffer.js" | prepend: site.baseurl }}'></script>
-{% endif %}
+    <script type="text/javascript" src='{{ "/js/browsersniffer.js" | prepend: site.baseurl }}'></script>
 
+    <script>
+        var browserSnifferData = window.browsersniffer.detect();
+        if (browserSnifferData.timing ) {
+            if (browserSnifferData.timing.hasOwnProperty('domComplete')) {
+                _gaq.push(['_trackEvent', 'perf', 'domComplete', browserSnifferData.timing.domComplete]);
+            }
+
+            if (browserSnifferData.hasOwnProperty('javaEnabled')) {
+                _gaq.push(['_trackEvent', 'general', 'javaEnabled', browserSnifferData.javaEnabled]);
+            }
+
+            if (browserSnifferData.hasOwnProperty('maxTouchPoints')) {
+                _gaq.push(['_trackEvent', 'screen', 'maxTouchPoints', browserSnifferData.maxTouchPoints]);
+            }
+        }
+
+    </script>
+{% endif %}
