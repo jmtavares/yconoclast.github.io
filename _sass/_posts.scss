@@ -14,10 +14,17 @@
     padding-bottom: 0;
 }
 
-.post-link .post-title {
-    margin-top: 0;
-    font-weight: 600;
-    color: #333;
+
+.post-link {
+    .post-title, .read-more {
+        margin-top: 0;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .read-more {
+        float: right;
+    }
 }
 
 .post-footer {
