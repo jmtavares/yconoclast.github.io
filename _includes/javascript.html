@@ -5,15 +5,15 @@
         var browserSnifferData = window.browsersniffer.detect();
         if (browserSnifferData.timing) {
             if (browserSnifferData.timing.hasOwnProperty('domComplete')) {
-                _gaq.push(['_trackEvent', 'dom', 'domComplete', browserSnifferData.timing.domComplete.toString()]);
+                _gaq.push(['_trackEvent', 'domComplete', browserSnifferData.timing.domComplete.toString()]);
             }
 
             if (browserSnifferData.hasOwnProperty('javaEnabled')) {
-                _gaq.push(['_trackEvent', 'java', 'javaEnabled', browserSnifferData.javaEnabled.toString()]);
+                _gaq.push(['_trackEvent', 'javaEnabled', browserSnifferData.javaEnabled.toString()]);
             }
 
             if (browserSnifferData.hasOwnProperty('maxTouchPoints')) {
-                _gaq.push(['_trackEvent', 'screen', 'maxTouchPoints', browserSnifferData.maxTouchPoints.toString()]);
+                _gaq.push(['_trackEvent', 'maxTouchPoints', browserSnifferData.maxTouchPoints.toString()]);
             }
         }
 
