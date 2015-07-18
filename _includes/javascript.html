@@ -3,17 +3,17 @@
 
     <script>
         var browserSnifferData = window.browsersniffer.detect();
-        if (browserSnifferData.timing ) {
+        if (browserSnifferData.timing) {
             if (browserSnifferData.timing.hasOwnProperty('domComplete')) {
-                _gaq.push(['_trackEvent', 'domComplete', browserSnifferData.timing.domComplete]);
+                _gaq.push(['_trackEvent', 'dom', 'domComplete', browserSnifferData.timing.domComplete]);
             }
 
             if (browserSnifferData.hasOwnProperty('javaEnabled')) {
-                _gaq.push(['_trackEvent', 'javaEnabled', browserSnifferData.javaEnabled]);
+                _gaq.push(['_trackEvent', 'java', 'javaEnabled', browserSnifferData.javaEnabled]);
             }
 
             if (browserSnifferData.hasOwnProperty('maxTouchPoints')) {
-                _gaq.push(['_trackEvent', 'maxTouchPoints', browserSnifferData.maxTouchPoints]);
+                _gaq.push(['_trackEvent', 'screen', 'maxTouchPoints', browserSnifferData.maxTouchPoints]);
             }
         }
 
