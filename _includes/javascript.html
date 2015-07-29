@@ -5,7 +5,7 @@
         var browserSnifferData = window.browsersniffer.detect();
         if (browserSnifferData.timing) {
             if (browserSnifferData.timing.hasOwnProperty('domLoading')) {
-                _gaq.push(['_trackEvent', 'domLoading', browserSnifferData.timing.domLoading.toString()]);
+                _gaq.push(['_setCustomVar', 1, 'domLoading', browserSnifferData.timing.domLoading.toString()]);
             }
         }
 
