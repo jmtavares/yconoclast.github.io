@@ -23,6 +23,13 @@ fs.readdir('/jsonFiles', function (err, listFiles) {
         function iterator(file, callback) {
             var filename = file.split('.')[0];
             data[namespace] = require(filename);
+
+            /*
+             * if you have completed your job
+             * just invoke the callback to set it completed
+             */
+
+            callback(null);
         },
         function (error) {
             /*
