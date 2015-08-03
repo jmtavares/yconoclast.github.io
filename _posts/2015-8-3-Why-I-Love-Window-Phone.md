@@ -14,7 +14,7 @@ Couple of things that I like about it **Windows Phone 8**:
 * All interactions are really **fluid and smooth**, even if you have a low end device.
 * The Start Screen is always showing you something new, it isn't boring at all.
 
-![_config.yml]({{ site.baseurl }}/images/windowsphone_10_tiles.png)
+![Windows Phone Tiles Example]({{ site.baseurl }}/images/windowsphone_10_tiles.png)
 {:.post-image }
 
 * When you go to a contact, you can see a resume of all his social interactions (Facebook, Twitter...)
@@ -26,7 +26,7 @@ Couple of things that I like about it **Windows Phone 8**:
 * You have **offline music** just by saving it on Onedrive, **MixRadio** is a really good Music App, let's you create a Mix and save it offline.
 * **Cortana** has really cool features, but maybe not the best personal assistant yet.
 
-![_config.yml]({{ site.baseurl }}/images/windowsphone_10_cortana.jpg)
+![Windows Phone Cortana]({{ site.baseurl }}/images/windowsphone_10_cortana.jpg)
 {:.post-image }
 
 * Not the best **Notification Center** but it has evolved since the beginning.
@@ -48,21 +48,21 @@ Now, **Windows Phone 10**
 * **Notification Center** has evolved a lot, maybe one of the best features so far.
 * When I receive a message I can reply without entering the message app.
 
-![_config.yml]({{ site.baseurl }}/images/windowsphone_10_message.png)
+![Message Panel]({{ site.baseurl }}/images/windowsphone_10_message.png)
 {:.post-image }
 
 * Better transitions between menus.
 * A list of new installed app is shown right on top.
 * The **Keyboard** is even smoother and it has a virtual stick.
 
-![_config.yml]({{ site.baseurl }}/images/windowsphone_10_keyboard.png)
+![Keyboard]({{ site.baseurl }}/images/windowsphone_10_keyboard.png)
 {:.post-image }
 
 * All **Office apps** look really cool
     * The **Outlook** is the best so far but we still have Word, PowerPoint and Excel.
 * Settings Menu is well organized.
 
-![_config.yml]({{ site.baseurl }}/images/windowsphone_10_settings.png)
+![Settings]({{ site.baseurl }}/images/windowsphone_10_settings.png)
 {:.post-image }
 
 * **Microsoft Edge**, at this moment is really fast, I hope it continues this way :)

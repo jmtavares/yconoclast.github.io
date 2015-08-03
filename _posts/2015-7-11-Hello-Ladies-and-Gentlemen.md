@@ -7,4 +7,4 @@ In my blog I will talk about web development, new frameworks, old frameworks, mu
 
 Basically everything I like :)
 
-![_config.yml]({{ site.baseurl }}/images/pedals.jpg)
+![My pedals]({{ site.baseurl }}/images/pedals.jpg)
