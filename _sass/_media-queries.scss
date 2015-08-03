@@ -41,6 +41,10 @@
     html {
         font-size: 18px;
     }
+    .post-image {
+        width: 300px;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: $viewport-large) {
