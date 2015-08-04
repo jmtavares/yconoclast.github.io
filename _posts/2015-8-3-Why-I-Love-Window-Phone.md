@@ -4,7 +4,7 @@ title: Why I Love Windows Phone :)
 category: web
 ---
 
-Everyday someone asks my why I use **Windows Phone** devices, when I have other "better" alternatives like Android or Iphone. I will point out some of the great things that Windows Phone devices have,
+Everyday someone asks my why I use **Windows Phone** devices, when I have other "better" alternatives like Android or iPhone. I will point out some of the great things that Windows Phone devices have,
 maybe I can even convince someone to start using it :)
 
 Couple of things that I like about it **Windows Phone 8**:
