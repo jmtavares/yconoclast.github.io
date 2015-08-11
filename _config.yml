@@ -10,7 +10,7 @@ url:         "http://yconoclast.github.io"
 google_analytics: UA-56447609-2
 
 # Browser Sniffer
-browsersniffer_enabled: true
+browsersniffer_enabled: false
 
 # Optional features
 animated:           true
