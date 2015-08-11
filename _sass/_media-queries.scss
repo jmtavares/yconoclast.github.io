@@ -37,13 +37,6 @@
     }
 }
 
-@media screen and (min-width: $viewport-small-medium) {
-    iframe {
-        width: 400px;
-        height: 300px;
-    }
-}
-
 @media screen and (min-width: $viewport-medium) {
     html {
         font-size: 18px;
