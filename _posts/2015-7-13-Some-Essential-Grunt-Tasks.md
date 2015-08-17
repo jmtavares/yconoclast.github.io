@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Some essential Grunt Tasks
+tags: [grunt, web]
 ---
 
 * <a href="https://github.com/stevewillard/grunt-version-check" target="_blank">**grunt-version-check**</a> - task to verify if your dependencies are up to date (NPM + Bower).

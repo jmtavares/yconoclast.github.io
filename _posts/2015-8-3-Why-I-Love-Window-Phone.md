@@ -2,6 +2,7 @@
 layout: post
 title: Why I Love Windows Phone :)
 category: web
+tags: [windows-phone]
 ---
 
 Everyday someone asks my why I use **Windows Phone** devices, when I have other "better" alternatives like Android or iPhone. I will point out some of the great things that Windows Phone devices have,

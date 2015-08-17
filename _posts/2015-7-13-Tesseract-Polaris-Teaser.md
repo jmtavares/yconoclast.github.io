@@ -2,6 +2,7 @@
 layout: post
 title: Tesseract Polaris Video (album teaser)
 category: music
+tags: [video, tesseract]
 ---
 
 

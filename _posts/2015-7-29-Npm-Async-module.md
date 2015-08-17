@@ -2,6 +2,7 @@
 layout: post
 title: Npm Async module - the last coke on the desert
 category: web
+tags: [npm, web]
 ---
 
 This **awesome module** has saved me twice in the last days. Async is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript. Although originally designed for use with Node.js and installable via npm install async, it can also be used directly in the browser.

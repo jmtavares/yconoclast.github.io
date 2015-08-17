@@ -2,6 +2,7 @@
 layout: post
 title: Browser Sniffer
 category: web
+tags: [javascript, web]
 ---
 
 Browser Sniffer aggregates information about the browser (browser name, operating system, screen capabilities, performance measures).

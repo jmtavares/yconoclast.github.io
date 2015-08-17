@@ -2,6 +2,7 @@
 layout: post
 title: How to sort Object Properties
 category: javascript
+tags: [javascript, web]
 ---
 
 I feel really sad when some API returns me an associative array and I need to sort it by its key. So how can we do this?

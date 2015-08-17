@@ -2,6 +2,7 @@
 layout: post
 title: Angular JS - Stop abusing $watchers
 category: web
+tags: [angularjs, javascript, web]
 ---
 
 <p style="text-align: center;">

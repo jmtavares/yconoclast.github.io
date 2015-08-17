@@ -2,6 +2,7 @@
 layout: post
 title: 6 Steps of Web Development Process
 category: web
+tags: [web]
 ---
 
 In every project I like to take some steps that I find to be really important to have a **Maintainable Web App with Quality**, if some of this steps aren't part of your daily basis, maybe you should rethink the way you are developing.
