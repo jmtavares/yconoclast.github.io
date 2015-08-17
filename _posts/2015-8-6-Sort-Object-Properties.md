@@ -38,6 +38,8 @@ Imagine you have this object:
 }
 {% endhighlight %}
 
+<!--more-->
+
 And we want to sort descending by its key, in this case it's a Date.
 
 {% gist yconoclast/7a8f204ebe5a3f4b5d1e %}

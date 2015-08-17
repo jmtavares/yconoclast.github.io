@@ -7,6 +7,8 @@ category: web
 Everyday someone asks my why I use **Windows Phone** devices, when I have other "better" alternatives like Android or iPhone. I will point out some of the great things that Windows Phone devices have,
 maybe I can even convince someone to start using it :)
 
+
+
 Couple of things that I like about it **Windows Phone 8**:
 
 * First of all, you can get a really good cellphone without paying too much.
@@ -16,6 +18,8 @@ Couple of things that I like about it **Windows Phone 8**:
 
 ![Windows Phone Tiles Example]({{ site.baseurl }}/images/windowsphone_10_tiles.png)
 {:.post-image }
+
+<!--more-->
 
 * When you go to a contact, you can see a resume of all his social interactions (Facebook, Twitter...)
     * Don't need to enter in Facebook to post something on a friend.

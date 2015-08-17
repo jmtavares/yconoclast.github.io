@@ -76,3 +76,38 @@ iframe {
     width: 300px;
     height: 225px;
 }
+
+.share-page {
+    font-weight: bold;
+    text-align: center;
+
+    .share-links {
+        a {
+            font-size: 1.8rem;
+            padding: 10px;
+            color: #333;
+            opacity: 0.6;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .fa-twitter {
+            color: #7ac9ed;
+        }
+        .fa-facebook {
+            color: #3b5998;
+        }
+        .fa-google-plus {
+            color: #d74d2f;
+        }
+        .fa-reddit {
+            color: #a181a7;
+        }
+        .fa-linkedin {
+            color: #0076B4;
+        }
+        .fa-tumblr {
+            color: #32455E;
+        }
+    }
+}
