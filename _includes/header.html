@@ -1,8 +1,13 @@
 <header class="site-header px2 px-responsive">
     <div class="mt2 wrap">
         <div class="measure">
-            <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
-            <span class="site-description">{{site.description}}</span>
+            <img src="/images/profile.jpg" class="avatar"/>
+
+            <div class="header-title">
+                <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
+                <span class="site-description">{{site.description}}</span>
+            </div>
+
             <nav class="site-nav">
                 {% include navigation.html %}
             </nav>
