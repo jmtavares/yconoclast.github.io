@@ -32,7 +32,7 @@ We all have different processes for developing, but these are the steps that I w
 
 <h2 id="3">Code</h2>
 
-* **Think about the best solution for the problem**, here I spend some thing
+* **Think about the best solution for the problem**
 * Implement everything specified in the User Story
 * If I'm proud of the Code I've done I will push my changes to my branch
 * Otherwise I spend some more time trying to implement a better solution
