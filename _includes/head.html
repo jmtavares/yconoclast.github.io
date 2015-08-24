@@ -51,7 +51,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title | xml_escape }}{% endif %}">
     <meta property="og:description" content="{% if page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
-    <meta content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" property="og:url">
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
     <meta property="og:site_name" content="{{ site.title | xml_escape }}">
     <meta content="{{ site.author }}" property="article:author">
     {% if page.category %}
@@ -67,6 +67,7 @@
     {% if page.image %}
         <meta content="/images/posts/{{ page.image }}" property="og:image">
     {% else %}
+        <meta content="/images/profile.png" property="og:image">
         <meta content="/images/profile.png" property="og:image">
     {% endif %}
     <meta content="{{ page.date }}" property="article:published_time">
