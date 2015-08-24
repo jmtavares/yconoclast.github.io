@@ -53,7 +53,7 @@
     <meta property="og:description" content="{% if page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
     <meta content="{{ site.url }}{{ page.url }}" property="og:url">
     <meta property="og:site_name" content="{{ site.title | xml_escape }}">
-    <meta content="{{ site.author }}" property="article:author">
+    <!--<meta content="{{ site.author }}" property="article:author">-->
     {% if page.category %}
         {% for category in page.category %}
         <meta content="{{ category }}" property="article:section">
