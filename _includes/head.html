@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{% if page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
     <meta name="author" content="{{ site.author }}">
-    {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ', ' }}">{% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
 
@@ -16,7 +15,7 @@
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
     {% if site.show_social_icons or site.show_sharing_icons %}
-      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     {% endif %}
 
     <!-- Apple -->
@@ -51,9 +50,27 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title | xml_escape }}{% endif %}">
-    <meta property="og:description" content="{% if page.description %}{{ page.description | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:description" content="{% if page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
+    <meta content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" property="og:url">
     <meta property="og:site_name" content="{{ site.title | xml_escape }}">
+    <meta content="{{ site.author }}" property="article:author">
+    {% if page.category %}
+        {% for category in page.category %}
+        <meta content="{{ category }}" property="article:section">
+        {% endfor %}
+    {% endif %}
+    {% if page.tags %}
+        {% for tag in page.tags %}
+        <meta content="{{ tag }}" property="article:tag">
+        {% endfor %}
+    {% endif %}
+    {% if page.image %}
+        <meta content="/images/posts/{{ page.image }}" property="og:image">
+    {% else %}
+        <meta content="/images/profile.png" property="og:image">
+    {% endif %}
+    <meta content="{{ page.date }}" property="article:published_time">
+
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
