@@ -32,3 +32,25 @@ body {
 .hide-small {
     display: none;
 }
+
+.supported {
+    color: #41B03D;
+    margin: 5px;
+}
+
+.not-supported {
+    color: #C24734;
+    margin: 5px;
+}
+
+.partial-support {
+    color: #A9BB00;
+    margin: 5px;
+}
+
+.support-unknown {
+    color: #838383;
+    margin: 5px;
+}
+
+
