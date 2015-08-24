@@ -31,6 +31,10 @@
         margin-left: $space-3;
         padding: $space-3;
     }
+
+    .hide-small {
+        display: block;
+    }
 }
 
 @media screen and (min-width: $viewport-medium) {
@@ -46,6 +50,10 @@
         width: 600px;
         height: 350px;
     }
+
+    .hide-small {
+        display: block;
+    }
 }
 
 @media screen and (min-width: $viewport-large) {
@@ -56,5 +64,9 @@
     iframe {
         width: 850px;
         height: 450px;
+    }
+
+    .hide-small {
+        display: block;
     }
 }

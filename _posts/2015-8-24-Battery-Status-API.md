@@ -42,8 +42,6 @@ navigator.getBattery().then(function(battery) {
 <script>
     if (navigator.getBattery) {
         document.write('<h2>Live Example <i id="battery-status" class="fa fa-battery-full" aria-hidden="true"></i></h2>');
-    } else {
-        document.write('<h2>Your browser does not support this yet</h2><a href="http://caniuse.com/#feat=battery-status" target="_blank">(Can I use Battery Status API)</a>');
     }
 </script>
 
@@ -99,6 +97,13 @@ navigator.getBattery().then(function(battery) {
 
     }
 </script>
+
+<h2 class="hide-small">Can I use</h2>
+<p class="hide-small">
+<a href="http://caniuse.com/#feat=battery-status" target="_blank">
+    <img src="{{ site.baseurl }}/images/posts/battery-status-api.png" alt="Can I use"/>
+</a>
+</p>
 
 
 ## Info
