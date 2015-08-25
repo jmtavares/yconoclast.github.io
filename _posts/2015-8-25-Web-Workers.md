@@ -52,7 +52,8 @@ This is needed in order to compare the results between using a **Web Worker** to
 </div>
 
 <div style="min-height: 300px">
-    <div id="box" style="background:#00AAF7;height:10px;width:10px;"></div>
+    <div id="box1" style="background:#00AAF7;height:10px;width:10px;"></div>
+    <div id="box2" style="background:#333;height:10px;width:10px;"></div>
 </div>
 
 
@@ -133,12 +134,19 @@ function webworkerRequest() {
 (function startAnimation () {
     updateRange();
     timerAnimation = setInterval(function(){
-        var div = $("#box");
-        div.animate({height: '300px', opacity: '0.4'}, "slow");
-        div.animate({width: '100%', opacity: '1'}, "slow");
-        div.animate({height: '10px', opacity: '0.4'}, "slow");
-        div.animate({width: '10px', opacity: '1'}, "slow");
-        }, 1000);
+        var box1 = $("#box1");
+        box1.animate({height: '150px', opacity: '0.4'}, "slow");
+        box1.animate({width: '100%', opacity: '1'}, "slow");
+        box1.animate({height: '10px', opacity: '0.4'}, "slow");
+        box1.animate({width: '10px', opacity: '1'}, "slow");
+
+        var box2 = $("#box2");
+        box2.animate({height: '150px', opacity: '0.4'}, "slow");
+        box2.animate({width: '100%', opacity: '1'}, "slow");
+        box2.animate({height: '10px', opacity: '0.4'}, "slow");
+        box2.animate({width: '10px', opacity: '1'}, "slow");
+
+    }, 1000);
 })();
 
 
