@@ -178,6 +178,10 @@ function makeRequest (url, callback) {
         if (xhr.readyState === 4) {
             // Evil Eval HERE :D
             var evilEval = eval(xhr.response);
+            var evilEval2 = eval(xhr.response);
+            var evilEval3 = eval(xhr.response);
+            var evilEval4 = eval(xhr.response);
+            var evilEval5 = eval(xhr.response);
             callback(xhr);
         }
     }
