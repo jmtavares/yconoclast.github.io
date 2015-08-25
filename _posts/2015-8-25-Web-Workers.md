@@ -5,7 +5,7 @@ category: web
 tags: [web, html5, web-worker]
 ---
 
-I have created a script to do **100 requests to get a huge JSON** and every time I get a response I do an EVAL to it.
+I have created a script to do **250 requests to get a huge JSON** and every time I get a response I do an EVAL to it.
 This is needed in order to compare the results between using a **Web Worker** to do all the processing or using the main thread.
 
 <!--more-->
@@ -16,6 +16,7 @@ This is needed in order to compare the results between using a **Web Worker** to
     var startTime;
     var elapsedTime;
     var testRunning = false;
+    var numberOfRequests;
 
     if (window.Worker) {
         var requestWorker = new Worker("/demos/web-workers/worker.js");
@@ -25,6 +26,12 @@ This is needed in order to compare the results between using a **Web Worker** to
         };
     }
 </script>
+
+<label>Number of Requests:</label>
+<label id="range-value"></label>
+<div style="text-align:center">
+    <input id="range" type="range" min="50" max="1000" value="250" onchange="updateRange()" style="width:50%"></input>
+</div>
 
 <label>Doing all processing without using web worker</label>
 <label id="local-time"></label>
@@ -36,8 +43,11 @@ This is needed in order to compare the results between using a **Web Worker** to
 
 <button class="test-btn" onclick="webworkerRequest()">Web Worker Requests</button>
 
+
+
 <div style="text-align:center">
-    <progress id="progress" value="0" max="100" style="width:50%"></progress>
+    <label style="display:block">Progress</label>
+    <progress id="progress" value="0" max="250" style="width:50%"></progress>
 </div>
 
 <div style="min-height: 300px">
@@ -73,6 +83,12 @@ Can I use
 <script>
 
 
+function updateRange() {
+    $("#range-value").text($("#range").val()).css("font-weight", "bold");
+    numberOfRequests = $("#range").val();
+    $("#progress").attr("max", numberOfRequests);
+}
+
 function setTestVariables () {
     $(".test-btn").attr("disabled", true);
     success = 0;
@@ -82,19 +98,19 @@ function setTestVariables () {
 function tickProgress(type) {
     success++;
     $("#progress").val(success);
-    if (success === 100) {
+    if (success == numberOfRequests) {
         elapsedTime = new Date() - startTime;
         testRunning = false;
         $(".test-btn").attr("disabled", false);
 
-        $("#" + type + "-time").text( " - " + elapsedTime + "ms").css("font-weight", "bold");
+        $("#" + type + "-time").text("(" + elapsedTime + "ms)").css("font-weight", "bold");
     }
 }
 
 function localRequest() {
     if (!testRunning) {
         setTestVariables();
-        for (var i = 0; i < 100; i++) {
+        for (var i = 0; i < numberOfRequests; i++) {
             makeRequest('/demos/web-workers/data.json?' + Math.random(),
                  function (data) {
                     tickProgress('local');
@@ -106,7 +122,7 @@ function localRequest() {
 function webworkerRequest() {
     if (!testRunning) {
         setTestVariables();
-        for (var i = 0; i < 100; i++) {
+        for (var i = 0; i < numberOfRequests; i++) {
             requestWorker.postMessage('/demos/web-workers/data.json?' + Math.random());
         }
     }
@@ -114,6 +130,7 @@ function webworkerRequest() {
 
 
 (function startAnimation () {
+    updateRange();
     timerAnimation = setInterval(function(){
         var div = $("#box");
         div.animate({height: '300px', opacity: '0.4'}, "slow");
