@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Robles Bush",
+    "gender": "male",
+    "email": "roblesbush@acruex.com"
+  },
+  {
+    "name": "Ruthie Flowers",
+    "gender": "female",
+    "email": "ruthieflowers@acruex.com"
+  },
+  {
+    "name": "Nora Soto",
+    "gender": "female",
+    "email": "norasoto@acruex.com"
+  },
+  {
+    "name": "Deborah Mason",
+    "gender": "female",
+    "email": "deborahmason@acruex.com"
+  },
+  {
+    "name": "Emilia Quinn",
+    "gender": "female",
+    "email": "emiliaquinn@acruex.com"
+  },
+  {
+    "name": "Mayer Woods",
+    "gender": "male",
+    "email": "mayerwoods@acruex.com"
+  },
+  {
+    "name": "Leola Humphrey",
+    "gender": "female",
+    "email": "leolahumphrey@acruex.com"
+  },
+  {
+    "name": "Matilda Shepard",
+    "gender": "female",
+    "email": "matildashepard@acruex.com"
+  },
+  {
+    "name": "Gallegos Roach",
+    "gender": "male",
+    "email": "gallegosroach@acruex.com"
+  },
+  {
+    "name": "Patton Mccormick",
+    "gender": "male",
+    "email": "pattonmccormick@acruex.com"
+  }
+]
