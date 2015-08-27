@@ -10,7 +10,10 @@ It uses  <a href="https://github.com/ded/bowser" target="_blank">Bowser</a> to d
 
 
 For more Information
-<a class="fa fa-github" target="_blank" href="https://github.com/yconoclast/browsersniffer">Browser Sniffer Github</a>.
+<a target="_blank" href="https://github.com/yconoclast/browsersniffer">
+    <i class="fa fa-github"></i>
+    Browser Sniffer Github
+</a>.
 
 {% highlight js %}
 npm install browsersniffer --save-dev

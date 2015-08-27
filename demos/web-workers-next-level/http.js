@@ -1,5 +1,7 @@
 'use strict';
 
+// Stolen from https://developer.mozilla.org/pt-PT/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
 function http(url) {
 
     // A small example of object
