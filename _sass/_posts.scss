@@ -4,8 +4,8 @@
 }
 
 .posts .post {
-    margin-bottom: 0.75em;
     border-bottom: thin solid #f3f3f3;
+    padding-bottom: 0;
 }
 
 .posts .post:last-child {
@@ -20,10 +20,6 @@
         margin-top: 0;
         font-weight: 600;
         color: #333;
-    }
-
-    .read-more {
-        float: right;
     }
 }
 

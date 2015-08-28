@@ -1,19 +1,19 @@
-<div class="pagination clearfix mb1 mt4">
+<div class="pagination clearfix mb1 mt3">
     <div class="left">
         {% if paginator.previous_page %}
         {% if paginator.page == 2 %}
-        <a class="pagination-item" href="{{ site.baseurl }}/">
+        <a class="pagination-item button default" href="{{ site.baseurl }}/">
             <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
             Newer
         </a>
         {% else %}
-        <a class="pagination-item" href="{{ site.baseurl }}/page{{paginator.previous_page}}/">
+        <a class="pagination-item button default" href="{{ site.baseurl }}/page{{paginator.previous_page}}/">
             <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
             Newer
         </a>
         {% endif %}
         {% else %}
-      <span class="pagination-item disabled">
+      <span class="pagination-item disabled button default">
           <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
           Newer
       </span>
@@ -21,12 +21,12 @@
     </div>
     <div class="right">
         {% if paginator.next_page %}
-        <a class="pagination-item" href="{{ site.baseurl }}/page{{paginator.next_page}}/">
+        <a class="pagination-item button default" href="{{ site.baseurl }}/page{{paginator.next_page}}/">
             Older
             <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
         </a>
         {% else %}
-      <span class="pagination-item disabled">
+      <span class="pagination-item disabled button default">
           Older
           <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
       </span>

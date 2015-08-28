@@ -6,38 +6,6 @@
     text-align: center;
 }
 
-.pagination a, .pagination .disabled {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    background: #fafafa;
-    border-radius: 0.1875em;
-    border: 1px solid #f3f3f3;
-    color: #333333;
-    padding: 1em 1.5em;
-    display: inline-block;
-
-    i {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: -webkit-transform .5s;
-        transition: transform .5s;
-    }
-}
-
-.pagination .disabled {
-    opacity: 0.5;
-}
-
-.pagination a:hover, .pagination a:focus {
-    background: white;
-    color: #477dca;
-    i {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
 .pagination a:active {
     background: #f7f7f7;
 }

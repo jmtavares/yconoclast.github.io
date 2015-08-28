@@ -16,7 +16,11 @@ layout: default
             {{ post.excerpt }}
           {% endif %}
         </p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h5 class="read-more">Read more</h5></a>
+          <p class="center">
+              <a href="{{ post.url | prepend: site.baseurl }}" class="button default size-100 bold">
+                  Read more
+              </a>
+          </p>
       </div>
     {% endfor %}
   </div>
