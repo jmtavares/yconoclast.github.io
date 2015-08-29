@@ -1,0 +1,11 @@
+<div class="categories-list">
+    <h2>Categories</h2>
+
+    <div class="center">
+        {% for tag in site.categories %}
+            <a class="button default" href="/{{tag[0]}}">{{ tag[0] | capitalize }}</a>
+        {% endfor %}
+
+        <a class="button default see-all-posts" href="/categories">See all posts</a>
+    </div>
+</div>
