@@ -32,29 +32,28 @@ On this page I only have this script:
 2. Handle the response from the Web Worker
 
 {% highlight js %}
-    if (window.Worker) {
-        var requestWorker = new Worker("/demos/web-workers-next-level/worker.js");
+if (window.Worker) {
+    var requestWorker = new Worker("/demos/web-workers-next-level/worker.js");
+    requestWorker.onmessage = function(e) {
+        switch (e.data.action) {
+            case 'getFriends':
+                // Handle response and list my friends
+                e.data.results.forEach(
+                    function (element, index, array) {
+                        $("#friends-list").append(
+                            "<p><i class='fa fa-" + element.gender +"'></i>" +
+                            element.name + " - " + element.email + "</p>"
+                        );
+          });
+          break;
+        }
+    };
 
-        requestWorker.onmessage = function(e) {
-            switch (e.data.action) {
-                case 'getFriends':
-                    // Handle response and list my friends
-                    e.data.results.forEach(function (element, index, array) {
-
-                        var genderIcon = "<i class='fa fa-" + element.gender +"'></i>"
-                        $("#friends-list").append("<p>" + genderIcon + element.name + " - " + element.email + "</p>");
-                    });
-
-
-                    break;
-            }
-        };
-
-        // Request my friends list to the Web Worker
-        requestWorker.postMessage({
-            action: 'getFriends'
-        });
-    }
+    // Request my friends list to the Web Worker
+    requestWorker.postMessage({
+        action: 'getFriends'
+    });
+}
 {% endhighlight %}
 
 Now the worker.js
@@ -68,7 +67,10 @@ This file is just a proxy to another services.
 {% highlight js %}
 "use strict";
 
-//Import this scripts into the worker namespace, it won't to added to the window object
+/*
+* Import this scripts into the worker namespace,
+* it won't to added to the window object
+**/
 importScripts('http.js', 'friends.service.js');
 
 var friendsService = new FriendsService();
