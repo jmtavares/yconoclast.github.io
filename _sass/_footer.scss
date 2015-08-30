@@ -7,27 +7,3 @@
 .site-wrap {
     flex: 1;
 }
-
-.categories-list {
-    background-color: $footer-bg-color;
-    border-top: $footer-border-top;
-    color: $footer-color;
-    font-size: $footer-font-size;
-    font-weight: $footer-font-weight;
-    padding: $footer-padding;
-    text-align: center;
-    h2 {
-        color: white;
-        margin: 0 0 1em 0;
-    }
-
-    .button {
-        margin: 0.5em;
-    }
-
-    .see-all-posts {
-        display: block;
-        width: 50%;
-        margin: 0.5em auto;
-    }
-}
