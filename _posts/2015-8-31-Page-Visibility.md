@@ -22,7 +22,7 @@ Designing web pages with knowledge of the page visibility will allow for improve
 **Please change the selected tab**
 
 
-<div id="logContainer" style="height:100px;overflow:auto"></div>
+<div id="logContainer" style="max-height:300px;overflow:auto"></div>
 
 <script>
 
