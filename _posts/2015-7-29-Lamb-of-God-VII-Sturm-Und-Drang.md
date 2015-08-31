@@ -5,10 +5,4 @@ category: music
 tags: [video, lamb-of-god]
 ---
 
-<p style="text-align: center;">
-    <span>
-        <iframe src="https://www.youtube.com/embed/dulxbKkj9Wg" frameborder="0" allowfullscreen=""></iframe>
-    </span>
-</p>
-
-Checkout the latest <a href="http://www.lamb-of-god.com/albums/">Lamb of God Album **VII: Sturm Und Drang**.</a>
+<div data-videoid="dulxbKkj9Wg" class="YoutubeDelayed"></div>
