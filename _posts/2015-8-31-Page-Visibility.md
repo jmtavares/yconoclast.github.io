@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Page Visibility
+title: Page Visibility API
 category: web
 tags: [web, html5, javascript]
 ---
