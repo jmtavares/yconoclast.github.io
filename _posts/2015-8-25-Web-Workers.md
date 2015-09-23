@@ -37,12 +37,12 @@ This is needed in order to compare the results between using a **Web Worker** to
 <label>Doing all processing without using web worker</label>
 <label id="local-time"></label>
 
-<button class="test-btn" onclick="localRequest()">Main Thread Requests</button>
+<button class="test-btn button default blue" onclick="localRequest()">Main Thread Requests</button>
 
 <label>Doing all processing using web worker</label>
 <label id="webworker-time"></label>
 
-<button class="test-btn" onclick="webworkerRequest()">Web Worker Requests</button>
+<button class="test-btn button default blue" onclick="webworkerRequest()">Web Worker Requests</button>
 
 
 

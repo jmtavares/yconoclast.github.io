@@ -7,9 +7,9 @@ tags: [web, html5, javascript, es6]
 
 ## Live Example
 
-<p style="text-align:center"><button style="width: 300px" onclick="fullscreen(document.documentElement, true)">Fullscreen</button></p>
-<p style="text-align:center"><button style="width: 300px" onclick="fullscreen(document.documentElement, false)">Stop Fullscreen</button></p>
-<p style="text-align:center"><button style="width: 300px" onclick="fullscreen(document.querySelector('#gist26600423'), true)">Fullscreen Gist</button></p>
+<p style="text-align:center"><button class="button default blue" style="width: 300px" onclick="fullscreen(document.documentElement, true)">Fullscreen</button></p>
+<p style="text-align:center"><button class="button default blue" style="width: 300px" onclick="fullscreen(document.documentElement, false)">Stop Fullscreen</button></p>
+<p style="text-align:center"><button class="button default blue" style="width: 300px" onclick="fullscreen(document.querySelector('#gist26600423'), true)">Fullscreen Gist</button></p>
 
 ## Code
 

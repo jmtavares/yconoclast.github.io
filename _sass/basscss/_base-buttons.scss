@@ -2,31 +2,30 @@
 
 button,
 .button {
-  font-family: $button-font-family;
-  font-size: $button-font-size;
-  font-weight: $bold-font-weight;
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  box-sizing: border-box;
-  line-height: $button-line-height;
-  padding: $button-padding-y $button-padding-x;
-  margin: 0;
-  height: auto;
-  border: 1px solid transparent;
-  vertical-align: middle;
-  -webkit-appearance: none;
+    font-family: $button-font-family;
+    font-size: $button-font-size;
+    font-weight: $bold-font-weight;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: $button-line-height;
+    padding: $button-padding-y $button-padding-x;
+    margin: 0;
+    height: auto;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    -webkit-appearance: none;
 }
 
 ::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+    border: 0;
+    padding: 0;
 }
 
 .button:hover {
   text-decoration: none;
 }
-
 
 .button.default {
     -webkit-transition: all 0.2s ease-in-out;
@@ -47,7 +46,7 @@ button,
     }
 
     &:hover {
-        background: white;
+        background: #fff;
         color: #477dca;
         i {
             -webkit-transform: rotate(360deg);
@@ -70,4 +69,10 @@ button,
             transition: transform .5s;
         }
     }
+}
+
+
+.button.blue {
+    background-color: #477dca;
+    color: #fff;
 }
