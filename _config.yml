@@ -33,8 +33,8 @@ bitcoin_url:
 paypal_url:
 flattr_button:
 facebook: yconoclast
-soundcloud: yconoclast
-lastfm: yconoclast
+soundcloud:
+lastfm:
 
 # Post sharing icons
 show_sharing_icons: true
