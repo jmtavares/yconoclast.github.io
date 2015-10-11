@@ -1,17 +1,14 @@
 # Site settings
-title:       José Tavares blog
+title:       Jose Tavares blog
 email:       josetavares00@gmail.com
-author:      José Tavares
-description: "Web Developer | Guitar Player | Snowboarder"
+author:      Jose Tavares
+description: "Frontend Samurai | Passionate Web Developer"
 baseurl:     ""
 url:         "http://yconoclast.github.io"
 excerpt_separator: <!--more-->
 
 # Google analytics
 google_analytics: UA-56447609-2
-
-# Browser Sniffer
-browsersniffer_enabled: false
 
 # Optional features
 animated:           true

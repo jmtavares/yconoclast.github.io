@@ -1,17 +1,3 @@
-{% if site.browsersniffer_enabled %}
-    <script type="text/javascript" src='{{ "/js/browsersniffer.js" | prepend: site.baseurl }}'></script>
-
-    <script>
-        var browserSnifferData = window.browsersniffer.detect();
-        if (browserSnifferData.timing) {
-            if (browserSnifferData.timing.hasOwnProperty('domLoading')) {
-                _gaq.push(['_setCustomVar', 1, 'domLoading', browserSnifferData.timing.domLoading.toString()]);
-            }
-        }
-
-    </script>
-{% endif %}
-
 <script type="text/javascript" src='{{ "/js/YoutubeDelayed.js" | prepend: site.baseurl }}'></script>
 <script>
     console.log("%c%s",
