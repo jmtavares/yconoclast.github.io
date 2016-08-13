@@ -31,7 +31,7 @@ This is needed in order to compare the results between using a **Web Worker** to
 <label id="range-value"></label>
 
 <div style="text-align:center">
-    <input id="range" type="range" min="50" max="1000" value="250" onchange="updateRange()" style="width:50%"></input>
+    <input id="range" type="range" min="50" max="1000" value="250" onchange="updateRange()" style="width:50%"/>
 </div>
 
 <label>Doing all processing without using web worker</label>
