@@ -45,7 +45,7 @@ share_digg: false
 share_tumblr: true
 share_reddit: true
 share_stumbleupon: false
-share_hackernews: false
+share_hackernews: true
 
 # Build settings
 markdown:     kramdown
