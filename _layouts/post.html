@@ -67,3 +67,19 @@ layout: default
     {% endif %}
 
 {% endif %}
+
+<script type="application/ld+json">
+    {
+       "@context": "http://schema.org",
+       "@type": "Article",
+       "url": "{{ site.url }}{{ post.url }}",
+       "author": "{{ site.author }}",
+       "dateCreated": "{{ page.date | date: "%b %-d, %Y" }}",
+       "dateModified": "{{ page.date | date: "%b %-d, %Y" }}",
+       "datePublished": "{{ page.date | date: "%b %-d, %Y" }}",
+       "name": "{{ page.title }}",
+       "headline": "{{ page.title }}",
+       "wordcount": "{{content | number_of_words}}",
+       "image": "https://yconoclast.github.io/images/profile.png"
+    }
+</script>
