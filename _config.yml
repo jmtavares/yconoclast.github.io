@@ -2,7 +2,7 @@
 title:       Jose Tavares blog
 email:       josetavares00@gmail.com
 author:      Jose Tavares
-description: "Frontend Samurai | Passionate Web Developer"
+description: "Fullstack Magician"
 baseurl:     ""
 url:         "http://yconoclast.github.io"
 excerpt_separator: <!--more-->
@@ -57,3 +57,5 @@ sass:
   compressed: true
 gems:
   - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate

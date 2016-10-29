@@ -47,6 +47,7 @@ Designing web pages with knowledge of the page visibility will allow for improve
     <i class="fa fa-opera supported" aria-hidden="true" title="Opera - Supported"></i>
     <i class="fa fa-firefox supported" aria-hidden="true" title="Firefox - Supported"></i>
     <i class="fa fa-safari supported" aria-hidden="true" title="Safari - Supported"></i>
+    <i class="fa fa-edge supported" aria-hidden="true" title="Edge - Supported"></i>
     <i class="fa fa-internet-explorer supported" aria-hidden="true" title="Internet Explorer - Supported"></i>
 </h2>
 <p class="hide-small">

@@ -27,7 +27,7 @@ window.browsersniffer.detect();
 
 And it will return an object like this:
 
-{% highlight js %}
+{% highlight json %}
 {
   "browser": "Chrome",
   "version": "42.0",

@@ -9,7 +9,7 @@ I feel really sad when some API returns me an associative array and I need to so
 
 Imagine you have this object:
 
-{% highlight js %}
+{% highlight json %}
 {
   "2015-07-20T16:55:00": {
     "line": "D",
@@ -47,7 +47,7 @@ And we want to sort descending by its key, in this case it's a Date.
 
 After using this function we get this object:
 
-{% highlight js %}
+{% highlight json %}
 {
   "2013-05-03T19:12:00": {
     "line": "B",

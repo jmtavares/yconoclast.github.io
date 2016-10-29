@@ -35,7 +35,8 @@ tags: [web, html5, javascript, es6]
     <i class="fa fa-opera partial-support" aria-hidden="true" title="Opera - Partial Support"></i>
     <i class="fa fa-firefox partial-support" aria-hidden="true" title="Firefox - Partial Support"></i>
     <i class="fa fa-safari partial-support" aria-hidden="true" title="Safari - Partial Support"></i>
-    <i class="fa fa-internet-explorer supported" aria-hidden="true" title="Internet Explorer - Supported"></i>
+    <i class="fa fa-edge partial-support" aria-hidden="true" title="Edge - Partial Supported"></i>
+    <i class="fa fa-internet-explorer partial-support" aria-hidden="true" title="Internet Explorer - Partial Supported"></i>
 </h2>
 <p class="hide-small">
     <a href="http://caniuse.com/#feat=fullscreen" target="_blank">

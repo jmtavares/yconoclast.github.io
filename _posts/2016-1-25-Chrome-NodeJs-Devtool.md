@@ -6,9 +6,9 @@ tags: [web, javascript, nodejs]
 ---
 
 Runs Node.js programs inside Chrome DevTools (using [Electron](https://github.com/atom/electron/))
+## Run
 
 ~~~ js
-# open a Node program in Chrome's DevTools
 devtool src/index.js
 ~~~
 This allows you to profile, debug and develop typical Node.js programs with some of the features of Chrome DevTools.

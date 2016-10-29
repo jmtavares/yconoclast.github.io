@@ -102,13 +102,14 @@ navigator.getBattery().then(function(battery) {
 Can I use
 <i class="fa fa-chrome supported" aria-hidden="true" title="Chrome - Supported"></i>
 <i class="fa fa-opera supported" aria-hidden="true" title="Opera - Supported"></i>
-<i class="fa fa-firefox partial-support" aria-hidden="true" title="Firefox - Partial Support"></i>
+<i class="fa fa-firefox supported" aria-hidden="true" title="Firefox -  Supported"></i>
 <i class="fa fa-safari not-supported" aria-hidden="true" title="Safari - Not Supported"></i>
+<i class="fa fa-edge not-supported" aria-hidden="true" title="Edge - Not Supported"></i>
 <i class="fa fa-internet-explorer not-supported" aria-hidden="true" title="Internet Explorer - Not Supported"></i>
 </h2>
 <p class="hide-small">
 <a href="http://caniuse.com/#feat=battery-status" target="_blank">
-    <img src="{{ site.baseurl }}/images/posts/battery-status-api.png" alt="Can I use"/>
+    <img src="{{ site.baseurl }}/images/posts/battery-status-caniuse.png" alt="Can I use"/>
 </a>
 </p>
 
