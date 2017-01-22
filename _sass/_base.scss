@@ -14,19 +14,19 @@ MIT License http://opensource.org/licenses/MIT
 */
 
 html, body {
-  height: auto;
-  min-height: 100%;
+    height: auto;
+    min-height: 100%;
 }
 
 img {
-  width: auto;
-  max-width: 100%;
+    width: auto;
+    max-width: 100%;
 }
 
 body {
-          box-sizing: border-box;
-     -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .hide-small {
@@ -53,7 +53,6 @@ body {
     margin: 5px;
 }
 
-
 .fa-male {
     color: #0097FF;
     padding: 5px;
@@ -62,5 +61,9 @@ body {
 .fa-female {
     color: #FE1E9A;
     padding: 5px;
+}
+
+.not-found-img {
+    max-width: 50%;
 }
 
