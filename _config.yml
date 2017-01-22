@@ -1,10 +1,10 @@
 # Site settings
-title:       Jose Tavares blog
+title:       Jose Tavares
 email:       josetavares00@gmail.com
 author:      Jose Tavares
 description: "Fullstack Magician"
 baseurl:     ""
-url:         "http://yconoclast.pt"
+url:         "http://www.yconoclast.pt"
 excerpt_separator: <!--more-->
 
 # Google analytics
