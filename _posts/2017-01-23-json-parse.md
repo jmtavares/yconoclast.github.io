@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JSON.parse reviver
+title: JSON.parse()
 category: web
 tags: [web, javascript]
 ---
