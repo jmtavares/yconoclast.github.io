@@ -38,7 +38,7 @@ share_text: 'Share this post'
 # Change to 'true' to enable individual icons
 share_facebook: true
 share_twitter: true
-share_googleplus: false
+share_googleplus: true
 share_linkedin: true
 share_digg: false
 share_tumblr: false
@@ -53,7 +53,7 @@ redcarpet:
 permalink:    pretty
 paginate:     5
 sass:
-  compressed: true
+  style: compressed
 gems:
   - jekyll-sitemap
   - jekyll-gist
