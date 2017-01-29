@@ -12,32 +12,7 @@ The Battery Status API, more often referred to as the Battery API, provides info
 
 ## Code Example
 
-{% highlight js %}
-navigator.getBattery().then(function(battery) {
-
-  console.log("Battery charging? " + (battery.charging ? "Yes" : "No"));
-  console.log("Battery level: " + battery.level * 100 + "%");
-  console.log("Battery charging time: " + battery.chargingTime + " seconds");
-  console.log("Battery discharging time: " + battery.dischargingTime + " seconds");
-
-  battery.addEventListener('chargingchange', function() {
-    console.log("Battery charging? " + (battery.charging ? "Yes" : "No"));
-  });
-
-  battery.addEventListener('levelchange', function() {
-    console.log("Battery level: " + battery.level * 100 + "%");
-  });
-
-  battery.addEventListener('chargingtimechange', function() {
-    console.log("Battery charging time: " + battery.chargingTime + " seconds");
-  });
-
-  battery.addEventListener('dischargingtimechange', function() {
-    console.log("Battery discharging time: " + battery.dischargingTime + " seconds");
-  });
-
-});
-{% endhighlight %}
+{% gist yconoclast/bbe78c214db44c4514ae06f2d37d2015 %}
 
 <script>
     if (navigator.getBattery) {

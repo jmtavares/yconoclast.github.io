@@ -10,14 +10,13 @@ Besides **var**, we now have access to two new identifiers for storing values �
 
 Unlike var, let and const statements **are not hoisted** to the top of their enclosing scope.
 
-<p data-height="312" data-theme-id="0" data-slug-hash="OMvBxO" data-default-tab="js" data-user="yconoclast" class='codepen'>See the Pen <a href='http://codepen.io/yconoclast/pen/OMvBxO/'>Var, let and const</a> by José (<a href='http://codepen.io/yconoclast'>@yconoclast</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="287" data-theme-id="dark" data-slug-hash="OMvBxO" data-default-tab="js,result" data-user="yconoclast" data-embed-version="2" data-pen-title="Var, let and const" class="codepen">See the Pen <a href="http://codepen.io/yconoclast/pen/OMvBxO/">Var, let and const</a> by José (<a href="http://codepen.io/yconoclast">@yconoclast</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 
 However, observe what happens when we replace var using let:
 
-<p data-height="332" data-theme-id="0" data-slug-hash="pgLxXm" data-default-tab="js" data-user="yconoclast" class='codepen'>See the Pen <a href='http://codepen.io/yconoclast/pen/pgLxXm/'>pgLxXm</a> by José (<a href='http://codepen.io/yconoclast'>@yconoclast</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<p data-height="304" data-theme-id="dark" data-slug-hash="pgLxXm" data-default-tab="js,result" data-user="yconoclast" data-embed-version="2" data-pen-title="pgLxXm" class="codepen">See the Pen <a href="http://codepen.io/yconoclast/pen/pgLxXm/">pgLxXm</a> by José (<a href="http://codepen.io/yconoclast">@yconoclast</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 <!--more-->
 
